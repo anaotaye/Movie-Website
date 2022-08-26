@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/8c4877e07f.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script> -->
+  </head>
+  <body>
+    <div class="loader hidden">
+      <div class="loader1"></div>
+      <div class="loader2"></div>
+    </div>
+
+    <header>
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-film"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg> MovieView
+    </a>
+
+      <ul class="nav">
+        <li><a href="#Home" class="link">Home</a></li>
+        <li><a href="#Trending" class="link">Trending</a></li>
+        <li><a href="#Genres" class="link">Genres</a></li>
+        <li><a href="#Coming" class="link">Coming Soon</a></li>
+      </ul>
+
+      <div class="search-area">
+        <form class="search-form">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>          
+            <input
+            placeholder="Search for a movie"
+            type="search"
+            class="search-input"
+          />
+        </form>
+      </div>
+    </header>
+
+    <!-- <section class="home swiper" id="Home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide container">
+          <img src="" class="swiper-image" alt="">
+          <div class="home-text">
+            <h1 class="swiper-title"></h1>
+            <a href="#" class="btn reviews">See Reviews</a>
+          </div>
+        </div>
+        <div class="swiper-slide container">
+          <img src="" class="swiper-image" alt="">
+          <div class="home-text">
+            <h1 class="swiper-title"></h1>
+            <a href="#" class="btn reviews">See Reviews</a>
+          </div>
+        </div>
+        <div class="swiper-slide container">
+          <img src="" class="swiper-image" alt="">
+          <div class="home-text">
+            <h1 class="swiper-title"></h1>
+            <a href="#" class="btn reviews">See Reviews</a>
+          </div>
+        </div>
+        <div class="swiper-slide container">
+          <img src="" class="swiper-image" alt="">
+          <div class="home-text">
+            <h1 class="swiper-title"></h1>
+            <a href="#" class="btn reviews">See Reviews</a>
+          </div>
+        </div> 
+      
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section> -->
+
+    <main id="Trending"></main>
+      <h1 class="title">Trending Movies</h1>
+      <!-- <div class="genres"></div> -->
+
+      <section id="movie-list">
+        <ul class="movies"></ul>
+      </section> 
+    </main>
+
+    
+
+    <!-- Link to Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".home", {
+       spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        }
+      });
+    </script>
+
+    <!-- Link to fontawesome icons JS -->
+    
+
+    <!-- Link to custom JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
